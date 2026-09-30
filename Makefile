@@ -1,14 +1,14 @@
-CC = gcc
-CFLAGS = -Wall -O2
+CXX = g++
+CXXFLAGS = -Wall -O2
 TARGET = main
-SRCS = main.c
-OBJS = $(SRCS:.c=.o)
+SRCS = main.cpp
+OBJS = $(SRCS:.cpp=.o)
 
 $(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 .PHONY: clean
 clean:
