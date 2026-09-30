@@ -3,6 +3,6 @@
 int main()
 {
     // @TODO: print a sentence you want.
-    std::cout << "Hello, ICS 26Fall! I am Jacky, student ID 25300980042." << std::endl;
+    std::cout << "Hello from the feature branch." << std::endl;
     return 0;
 }
